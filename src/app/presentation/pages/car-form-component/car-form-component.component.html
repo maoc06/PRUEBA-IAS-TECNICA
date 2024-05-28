@@ -1,0 +1,49 @@
+<div class="form-container">
+  <form [formGroup]="carForm">
+    <h2>Formulario de Carro</h2>
+    <mat-form-field appearance="outline">
+      <mat-label>Car Make</mat-label>
+      <input matInput placeholder="Toyota" formControlName="make" />
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Car Model</mat-label>
+      <input matInput placeholder="Corolla" formControlName="model" />
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Car Year</mat-label>
+      <input matInput placeholder="2024" formControlName="year" />
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Car Color</mat-label>
+      <input matInput placeholder="Silver" formControlName="color" />
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Car Price</mat-label>
+      <input matInput placeholder="$1,255" formControlName="price" />
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Car image</mat-label>
+      <input matInput placeholder="image url" formControlName="image" />
+    </mat-form-field>
+<!-- 
+    <mat-form-field appearance="outline">
+      <mat-label>Car Price</mat-label>
+      <mat-slide-toggle
+        class="example-margin"
+        color="accent"
+        [checked]="checked"
+        [disabled]="disabled"
+        formControlName="isAvailable"
+      >
+        already sell?
+      </mat-slide-toggle>
+    </mat-form-field> -->
+
+    <button mat-button color="primary" (click)="saveNewCar()">SAVE</button>
+  </form>
+</div>

@@ -1,0 +1,10 @@
+<mat-card class="example-card">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>
+      {{ carData.price | customCurrency }}
+    </mat-card-title>
+    <mat-card-subtitle>{{ carData.make }} {{ carData.model }} {{ carData.year }} {{ carData.color }}</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image [src]="carData.image" />
+</mat-card>

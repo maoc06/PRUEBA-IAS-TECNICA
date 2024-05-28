@@ -1,0 +1,7 @@
+<h3 *ngIf="cars.length === 0; else carsGrid">No hay elementos para mostrar</h3>
+
+<ng-template #carsGrid>
+  <section class="card-grid">
+    <app-card *ngFor="let car of cars" [carData]="car"></app-card>
+  </section>
+</ng-template>
